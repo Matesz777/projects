@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wypchaj Brzuszek - Menu</title>
+    <link rel="icon" type="imagine/png" href="./favicon1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Montserrat", serif;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            height: 100px;
+        }
+        header h1{
+            padding: 25px;
+            color: white;
+        }
+        header button{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100px;
+            width: 100px;
+            border: none;
+            background-color: rgb(3, 177, 3);
+        }
+        header button:hover{
+            background-color: rgb(3, 44, 1);
+        }
+        header button a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+        hr{
+            height: 10px;
+            background-color: rgb(3, 177, 3);
+            border-color: rgb(3, 177, 3);
+        }
+        main{
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid rgb(3, 177, 3);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        main h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .product{
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgb(3, 177, 3);
+            padding-bottom: 20px;
+        }
+        .product:last-child{
+            border-bottom: none;
+        }
+        .product h3{
+            margin-bottom: 10px;
+        }
+        .product span{
+            font-weight: bold;
+            color: #f11b1b;
+        }
+        footer{
+        padding: 15px;
+        background-color: black;
+        }
+        .stopka{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style-type: none;
+            width: 100%;
+            font-size: 1.2rem;
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .lista-footer li a:hover{
+            text-decoration: underline;
+        }
+        @media  screen and (max-width: 520px) {
+            header{
+                display: flex;
+                flex-direction: column;
+                word-wrap: break-word;
+            }
+            header button{
+                height: 25px;
+                width: 100px;
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button><a href="./index.html">WSTECZ</a></button>
+        <h1>Menu Głodomora!</h1>
+        <hr>
+    </header>
+    <main>
+        <h2>Burgery</h2>
+
+        <div class="product">
+            <h3>Klasyczek</h3>
+            <p><b>Składniki: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, sint?</p>
+            <p>Cena: <span>25 zł</span></p>
+        </div>
+
+        <div class="product">
+            <h3>Wieśniak</h3>
+            <p><b>Składniki: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, sint?</p>
+            <p>Cena: <span>29 zł</span></p>
+        </div>
+
+        <div class="product">
+            <h3>Tower</h3>
+            <p><b>Składniki: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, sint?</p>
+            <p>Cena: <span>35 zł</span></p>
+        </div>
+
+        <div class="product">
+            <h3>Double Tower</h3>
+            <p><b>Składniki: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, sint?</p>
+            <p>Cena: <span>42 zł</span></p>
+        </div>
+
+        <div class="product">
+            <h3>Triple Tower</h3>
+            <p><b>Składniki: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, sint?</p>
+            <p>Cena: <span>50 zł</span></p>
+        </div>
+
+        <h2>Dodatki</h2>
+
+        <div class="product">
+            <h3>Frytki</h3>
+            <p>Tradycyjne frytki, solone.</p>
+            <p>Cena: <span>10 zł</span></p>
+        </div>
+
+        <div class="product">
+            <h3>Onion Rings</h3>
+            <p>Chrupiące krążki cebulowe.</p>
+            <p>Cena: <span>12 zł</span></p>
+        </div>
+
+        <h2>Napoje</h2>
+
+        <div class="product">
+            <h3>Coca-Cola</h3>
+            <p>0.5L zimny napój.</p>
+            <p>Cena: <span>8 zł</span></p>
+        </div>
+
+        <div class="product">
+            <h3>Woda Mineralna</h3>
+            <p>0.5L gazowana lub niegazowana.</p>
+            <p>Cena: <span>6 zł</span></p>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div class="stopka">
+            <ul class="lista-footer">
+                <li><a href="#">Aktualności </a></li>
+                <li><a href="./menu.html">Menu </a></li>
+                <li><a href="#">Kontakt </a></li>
+                <li><a href="#">O nas </a></li>
+                <li><a href="#">Zamów food trcuka </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
